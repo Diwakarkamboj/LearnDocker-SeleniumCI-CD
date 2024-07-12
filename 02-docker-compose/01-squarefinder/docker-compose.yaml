@@ -1,0 +1,7 @@
+version: "3"
+services:
+ squares:
+  image: diwakar15/square
+  environment:
+  - NUMBER=5
+  
