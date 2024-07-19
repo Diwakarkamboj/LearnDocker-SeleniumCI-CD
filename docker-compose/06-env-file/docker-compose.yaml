@@ -1,0 +1,11 @@
+# diwakar15/sel-app:v1
+# diwakar15/sel-app:v2
+# diwakar15/sel-app:v3
+
+
+version: "3"
+services:
+ demo:  
+  image: diwakar15/sel-app:${VERSION}
+  ports:
+  - 80:80

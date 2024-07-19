@@ -1,0 +1,8 @@
+version: "3"
+services:
+ squares:
+  image: diwakar15/square
+  environment:
+ # - NUMBER=${NUM} #use this cmd to execute in windows CLI SET NUM=6 docker-compose up, to set blank SET NUM=
+ #  - NUMBER=${NUM:-7} # to set a default value if no value is assigned we can override using SET also
+   - NUMBER #for this we can set without providing any defualt value or value we can directly SET value in CLI
