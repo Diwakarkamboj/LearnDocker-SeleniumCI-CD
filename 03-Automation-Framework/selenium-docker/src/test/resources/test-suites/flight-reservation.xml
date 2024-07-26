@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+
+<suite name = "flight-reservation">
+
+	<test name="passangers-count-1">
+	<parameter name="noOfPassangers" value="1"/>
+	<parameter name="expectedPrice" value="$584 USD"/>
+	<classes>
+	<class name="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest"/>
+	</classes>
+	</test>
+	
+	<test name="passangers-count-2">
+	<parameter name="noOfPassangers" value="2"/>
+	<parameter name="expectedPrice" value="$1169 USD"/>
+	<classes>
+	<class name="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest"/>
+	</classes>
+	</test>
+	
+	<test name="passangers-count-3">
+	<parameter name="noOfPassangers" value="3"/>
+	<parameter name="expectedPrice" value="$1753 USD"/>
+	<classes>
+	<class name="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest"/>
+	</classes>
+	</test>
+	
+	<test name="passangers-count-4">
+	<parameter name="noOfPassangers" value="4"/>
+	<parameter name="expectedPrice" value="$2338 USD"/>
+	<classes>
+	<class name="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest"/>
+	</classes>
+	</test>
+	
+</suite>

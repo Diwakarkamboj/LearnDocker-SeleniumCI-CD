@@ -3,17 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest">
+      <class name="com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest">
         <methods>
-          <include name="flightSelectionTest"/>
-          <include name="flightReservationConfirmationTest"/>
-          <include name="flightSearchTest"/>
-          <include name="registrationConfirmationTest"/>
-          <include name="userRegistrationTest"/>
-          <include name="quitDriver"/>
+          <include name="dashboardPage"/>
           <include name="setDriver"/>
+          <include name="loginTest"/>
+          <include name="logoutPage"/>
         </methods>
-      </class> <!-- com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest -->
+      </class> <!-- com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
