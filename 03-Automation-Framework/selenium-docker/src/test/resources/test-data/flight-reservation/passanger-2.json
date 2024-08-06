@@ -1,0 +1,11 @@
+{
+"firstName" : "Ajay",
+"lastName" : "Sharma",
+"email" : "Ajay@gmail.com",
+"password" : "Docker",
+"street" : "63 Whiteman St",
+"city" : "Trugnina",
+"zip" : "2001",
+"passangersCount" : "2",
+"expectedPrice" : "$1169 USD" 
+}

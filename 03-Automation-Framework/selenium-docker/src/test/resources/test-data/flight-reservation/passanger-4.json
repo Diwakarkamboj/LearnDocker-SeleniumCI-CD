@@ -1,0 +1,11 @@
+{
+"firstName" : "Fendy",
+"lastName" : "jackson",
+"email" : "fendy@gmail.com",
+"password" : "g12g2",
+"street" : "1A23 lonsdale street",
+"city" : "Melbourne",
+"zip" : "3006",
+"passangersCount" : "4",
+"expectedPrice" : "$2338 USD" 
+}

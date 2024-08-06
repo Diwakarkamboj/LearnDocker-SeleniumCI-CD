@@ -1,0 +1,11 @@
+{
+"firstName" : "michael",
+"lastName" : "jackson",
+"email" : "m@gmail.com",
+"password" : "mj",
+"street" : "123 main street",
+"city" : "Melbourne",
+"zip" : "3006",
+"passangersCount" : "1",
+"expectedPrice" : "$584 USD" 
+}

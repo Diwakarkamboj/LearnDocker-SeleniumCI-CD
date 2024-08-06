@@ -14,7 +14,10 @@ public class RegistrationConfirmationPage extends AbstractPage{
 	
 	
 	@FindBy(id = "go-to-flights-search")
-	WebElement goToFlightsSearchBtn;
+	private WebElement goToFlightsSearchBtn;
+	
+	@FindBy(css = "#registration-confirmation-section p b")
+	private WebElement firstNameElement;
 	
 	
 	
@@ -33,6 +36,10 @@ public class RegistrationConfirmationPage extends AbstractPage{
 	public void clkGoToFlightsSearchBtn() {
 		
 		this.goToFlightsSearchBtn.click();
+	}
+	
+	public String getFirstName() {
+		return this.firstNameElement.getText();
 	}
 
 

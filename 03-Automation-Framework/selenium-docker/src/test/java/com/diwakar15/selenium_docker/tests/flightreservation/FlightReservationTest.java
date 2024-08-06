@@ -11,17 +11,17 @@ import com.diwakar15.selenium_docker.pages.flightreservation.FlightsSelectionPag
 import com.diwakar15.selenium_docker.pages.flightreservation.RegistrationConfirmationPage;
 import com.diwakar15.selenium_docker.pages.flightreservation.RegistrationPage;
 import com.diwakar15.selenium_docker.tests.AbstractTest;
+import com.diwakar15.selenium_docker.tests.flightreservation.model.FlightReservationTestData;
+import com.diwakar15.selenium_docker.util.JsonUtil;
 
 public class FlightReservationTest extends AbstractTest {
 
-	private String noOfPassangers;
-	private String expectedPrice;
+	private FlightReservationTestData testData;
 
-	@Parameters({ "noOfPassangers", "expectedPrice" })
 	@BeforeTest
-	public void setParameters(String noOfPassangers, String expectedPrice) {
-		this.noOfPassangers = noOfPassangers;
-		this.expectedPrice = expectedPrice;
+	@Parameters("testDataPath")
+	public void setParameters(String testDataPath) {
+		this.testData = JsonUtil.getTestData(testDataPath, FlightReservationTestData.class);
 
 	}
 
@@ -32,9 +32,9 @@ public class FlightReservationTest extends AbstractTest {
 		registrationPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html#");
 		Assert.assertTrue(registrationPage.isAt());
 
-		registrationPage.enterUserDetails("Ajay", "Sharma");
-		registrationPage.enterUserCredentials("Ajay@gmail.com", "Docker");
-		registrationPage.enterUserAddress("63 Whiteman St", "Melbourne", "3006");
+		registrationPage.enterUserDetails(testData.firstName(), testData.lastName());
+		registrationPage.enterUserCredentials(testData.email(), testData.password());
+		registrationPage.enterUserAddress(testData.street(), testData.city(), testData.zip());
 		registrationPage.register();
 
 	}
@@ -44,7 +44,7 @@ public class FlightReservationTest extends AbstractTest {
 
 		RegistrationConfirmationPage registrationConfirmationPage = new RegistrationConfirmationPage(driver);
 		Assert.assertTrue(registrationConfirmationPage.isAt());
-
+		Assert.assertEquals(registrationConfirmationPage.getFirstName(), testData.firstName() );
 		registrationConfirmationPage.clkGoToFlightsSearchBtn();
 	}
 
@@ -54,7 +54,7 @@ public class FlightReservationTest extends AbstractTest {
 		FlightsSearchPage flightSearchPage = new FlightsSearchPage(driver);
 		Assert.assertTrue(flightSearchPage.isAt());
 
-		flightSearchPage.selectPassangers(noOfPassangers);
+		flightSearchPage.selectPassangers(testData.passangersCount());
 		flightSearchPage.searchFlightsBtn();
 
 	}
@@ -75,7 +75,7 @@ public class FlightReservationTest extends AbstractTest {
 		FlightConfirmationPage flightConfirmationPage = new FlightConfirmationPage(driver);
 		Assert.assertTrue(flightConfirmationPage.isAt());
 
-		Assert.assertEquals(flightConfirmationPage.getPrice(), expectedPrice);
+		Assert.assertEquals(flightConfirmationPage.getPrice(), testData.expectedPrice());
 
 	}
 
