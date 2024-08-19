@@ -10,6 +10,8 @@ import com.diwakar15.selenium_docker.pages.vendorportal.LoginPage;
 import com.diwakar15.selenium_docker.pages.vendorportal.LogoutPage;
 import com.diwakar15.selenium_docker.tests.AbstractTest;
 import com.diwakar15.selenium_docker.tests.vendorportal.model.VendorPortalTestData;
+import com.diwakar15.selenium_docker.util.Config;
+import com.diwakar15.selenium_docker.util.Constants;
 import com.diwakar15.selenium_docker.util.JsonUtil;
 
 public class VendorPortalTest extends AbstractTest {
@@ -31,7 +33,7 @@ public class VendorPortalTest extends AbstractTest {
 	@Test
 	public void loginTest() {
 		// LoginPage loginPage = new LoginPage(driver);
-		loginPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html");
+		loginPage.goTo(Config.get(Constants.VENDOR_PORTAL_URL));
 		Assert.assertTrue(loginPage.isAt());
 		loginPage.login(testData.username(), testData.password());
 	}

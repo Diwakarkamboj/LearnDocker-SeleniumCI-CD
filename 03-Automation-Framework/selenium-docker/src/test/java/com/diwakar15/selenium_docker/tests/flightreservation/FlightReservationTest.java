@@ -12,6 +12,8 @@ import com.diwakar15.selenium_docker.pages.flightreservation.RegistrationConfirm
 import com.diwakar15.selenium_docker.pages.flightreservation.RegistrationPage;
 import com.diwakar15.selenium_docker.tests.AbstractTest;
 import com.diwakar15.selenium_docker.tests.flightreservation.model.FlightReservationTestData;
+import com.diwakar15.selenium_docker.util.Config;
+import com.diwakar15.selenium_docker.util.Constants;
 import com.diwakar15.selenium_docker.util.JsonUtil;
 
 public class FlightReservationTest extends AbstractTest {
@@ -29,7 +31,7 @@ public class FlightReservationTest extends AbstractTest {
 	public void userRegistrationTest() {
 
 		RegistrationPage registrationPage = new RegistrationPage(driver);
-		registrationPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html#");
+		registrationPage.goTo(Config.get(Constants.FLIGHT_RESERVATION_URL));
 		Assert.assertTrue(registrationPage.isAt());
 
 		registrationPage.enterUserDetails(testData.firstName(), testData.lastName());
