@@ -1,0 +1,41 @@
+pipeline{
+
+    agent any
+
+    environment {
+        NUMBER = 3
+    }
+
+    stages{
+
+        stage('stage-1'){
+            steps{
+                //bat "docker run -e NUMBER=${NUMBER} vinsdocker/squares"
+                bat "docker run -e NUMBER=${NUMBER} diwakar15/square"
+            }
+        }
+
+        stage('stage-2'){
+            environment {
+                NUMBER = 6
+            }
+            steps{
+                bat "docker run -e NUMBER=${NUMBER} diwakar15/square"
+            }            
+        }  
+
+        stage('stage-3'){
+            steps{
+                bat "docker run -e NUMBER=${NUMBER} diwakar15/square"
+            }            
+        }                
+
+    }
+
+    post {
+        always {
+            bat "docker system prune -f"
+        }
+    }
+
+}
