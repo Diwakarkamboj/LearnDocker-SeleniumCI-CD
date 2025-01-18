@@ -7,7 +7,7 @@
 
 	<groupId>com.diwakar15</groupId>
 	<artifactId>selenium-docker</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>  
 
 	<name>selenium-docker</name>
 	<!-- FIXME change it to the project's website -->
@@ -85,7 +85,7 @@
 				<configuration>
 					<systemPropertyVariables>
 						<browser>chrome</browser>
-						<selenium.grid.enabled>true</selenium.grid.enabled>
+						<selenium.grid.enabled>false</selenium.grid.enabled>
 					</systemPropertyVariables>
 					<suiteXmlFiles>
 						<file>src/test/resources/test-suites/flight-reservation.xml</file>

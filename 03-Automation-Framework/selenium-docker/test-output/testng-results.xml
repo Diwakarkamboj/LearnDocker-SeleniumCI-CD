@@ -1,139 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-26T12:18:20 AEST" name="vendor-portal" finished-at="2024-08-26T12:18:39 AEST" duration-ms="19493">
+  <suite started-at="2025-01-18T16:26:13 AEDT" name="flight-reservation" finished-at="2025-01-18T16:26:49 AEDT" duration-ms="35349">
     <groups>
     </groups>
-    <test started-at="2024-08-26T12:18:20 AEST" name="mike" finished-at="2024-08-26T12:18:36 AEST" duration-ms="15974">
-      <class name="com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest">
-        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@74f6c5d8]" started-at="2024-08-26T12:18:20 AEST" name="setDriver" finished-at="2024-08-26T12:18:27 AEST" duration-ms="7244" status="PASS">
+    <test started-at="2025-01-18T16:26:13 AEDT" name="passangers-count-2" finished-at="2025-01-18T16:26:41 AEDT" duration-ms="27718">
+      <class name="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@34b9f960]" started-at="2025-01-18T16:26:13 AEDT" name="setDriver" finished-at="2025-01-18T16:26:21 AEDT" duration-ms="8072" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@13d4992d]]>
+                <![CDATA[org.testng.TestRunner@53251a66]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@74f6c5d8]" started-at="2024-08-26T12:18:27 AEST" name="setPageObjects" finished-at="2024-08-26T12:18:28 AEST" depends-on-methods="com.diwakar15.selenium_docker.tests.AbstractTest.setDriver" duration-ms="1268" status="PASS">
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@34b9f960]" started-at="2025-01-18T16:26:21 AEDT" name="setParameters" finished-at="2025-01-18T16:26:22 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.AbstractTest.setDriver" duration-ms="986" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test-data/vendor-portal/mike.json]]>
+                <![CDATA[test-data/flight-reservation/passanger-2.json]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setPageObjects -->
-        <test-method signature="loginTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@74f6c5d8]" started-at="2024-08-26T12:18:28 AEST" name="loginTest" finished-at="2024-08-26T12:18:31 AEST" duration-ms="2890" status="PASS">
+        </test-method> <!-- setParameters -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@34b9f960]" started-at="2025-01-18T16:26:22 AEDT" name="userRegistrationTest" finished-at="2025-01-18T16:26:31 AEDT" duration-ms="8122" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method signature="dashboardPage()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@74f6c5d8]" started-at="2024-08-26T12:18:31 AEST" name="dashboardPage" finished-at="2024-08-26T12:18:34 AEST" depends-on-methods="com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest.loginTest" duration-ms="2619" status="PASS">
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@34b9f960]" started-at="2025-01-18T16:26:31 AEDT" name="registrationConfirmationTest" finished-at="2025-01-18T16:26:31 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="868" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dashboardPage -->
-        <test-method signature="logoutPage()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@74f6c5d8]" started-at="2024-08-26T12:18:34 AEST" name="logoutPage" finished-at="2024-08-26T12:18:36 AEST" depends-on-methods="com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest.dashboardPage" duration-ms="1628" status="PASS">
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightSearchTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@34b9f960]" started-at="2025-01-18T16:26:31 AEDT" name="flightSearchTest" finished-at="2025-01-18T16:26:35 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="3488" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutPage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@74f6c5d8]" started-at="2024-08-26T12:18:36 AEST" name="quitDriver" finished-at="2024-08-26T12:18:36 AEST" duration-ms="241" status="PASS">
+        </test-method> <!-- flightSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@34b9f960]" started-at="2025-01-18T16:26:35 AEDT" name="flightSelectionTest" finished-at="2025-01-18T16:26:40 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.flightSearchTest" duration-ms="4835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@34b9f960]" started-at="2025-01-18T16:26:40 AEDT" name="flightReservationConfirmationTest" finished-at="2025-01-18T16:26:41 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.flightSelectionTest" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@34b9f960]" started-at="2025-01-18T16:26:41 AEDT" name="quitDriver" finished-at="2025-01-18T16:26:41 AEDT" duration-ms="513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest -->
-    </test> <!-- mike -->
-    <test started-at="2024-08-26T12:18:20 AEST" name="user-sam" finished-at="2024-08-26T12:18:38 AEST" duration-ms="18285">
-      <class name="com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest">
-        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@6c7a164b]" started-at="2024-08-26T12:18:20 AEST" name="setDriver" finished-at="2024-08-26T12:18:27 AEST" duration-ms="7246" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@5082d622]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@6c7a164b]" started-at="2024-08-26T12:18:27 AEST" name="setPageObjects" finished-at="2024-08-26T12:18:28 AEST" depends-on-methods="com.diwakar15.selenium_docker.tests.AbstractTest.setDriver" duration-ms="1268" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test-data/vendor-portal/sam.json]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setPageObjects -->
-        <test-method signature="loginTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@6c7a164b]" started-at="2024-08-26T12:18:28 AEST" name="loginTest" finished-at="2024-08-26T12:18:31 AEST" duration-ms="2850" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method signature="dashboardPage()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@6c7a164b]" started-at="2024-08-26T12:18:31 AEST" name="dashboardPage" finished-at="2024-08-26T12:18:35 AEST" depends-on-methods="com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest.loginTest" duration-ms="4163" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dashboardPage -->
-        <test-method signature="logoutPage()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@6c7a164b]" started-at="2024-08-26T12:18:35 AEST" name="logoutPage" finished-at="2024-08-26T12:18:38 AEST" depends-on-methods="com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest.dashboardPage" duration-ms="2432" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutPage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@6c7a164b]" started-at="2024-08-26T12:18:38 AEST" name="quitDriver" finished-at="2024-08-26T12:18:38 AEST" duration-ms="228" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest -->
-    </test> <!-- user-sam -->
-    <test started-at="2024-08-26T12:18:20 AEST" name="user-john" finished-at="2024-08-26T12:18:39 AEST" duration-ms="19493">
-      <class name="com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest">
-        <test-method is-config="true" signature="setupConfig()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@34b9f960]" started-at="2024-08-26T12:18:20 AEST" name="setupConfig" finished-at="2024-08-26T12:18:20 AEST" duration-ms="76" status="PASS">
+      </class> <!-- com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passangers-count-2 -->
+    <test started-at="2025-01-18T16:26:13 AEDT" name="passangers-count-4" finished-at="2025-01-18T16:26:44 AEDT" duration-ms="31042">
+      <class name="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setupConfig()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@2415fc55]" started-at="2025-01-18T16:26:13 AEDT" name="setupConfig" finished-at="2025-01-18T16:26:13 AEDT" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupConfig -->
-        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@34b9f960]" started-at="2024-08-26T12:18:20 AEST" name="setDriver" finished-at="2024-08-26T12:18:27 AEST" duration-ms="7249" status="PASS">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@2415fc55]" started-at="2025-01-18T16:26:13 AEDT" name="setDriver" finished-at="2025-01-18T16:26:22 AEDT" duration-ms="8208" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@18e36d14]]>
+                <![CDATA[org.testng.TestRunner@63eef88a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@34b9f960]" started-at="2024-08-26T12:18:27 AEST" name="setPageObjects" finished-at="2024-08-26T12:18:28 AEST" depends-on-methods="com.diwakar15.selenium_docker.tests.AbstractTest.setDriver" duration-ms="1265" status="PASS">
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@2415fc55]" started-at="2025-01-18T16:26:22 AEDT" name="setParameters" finished-at="2025-01-18T16:26:22 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.AbstractTest.setDriver" duration-ms="852" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test-data/vendor-portal/john.json]]>
+                <![CDATA[test-data/flight-reservation/passanger-4.json]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setPageObjects -->
-        <test-method signature="loginTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@34b9f960]" started-at="2024-08-26T12:18:28 AEST" name="loginTest" finished-at="2024-08-26T12:18:31 AEST" duration-ms="2862" status="PASS">
+        </test-method> <!-- setParameters -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@2415fc55]" started-at="2025-01-18T16:26:22 AEDT" name="userRegistrationTest" finished-at="2025-01-18T16:26:32 AEDT" duration-ms="9654" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method signature="dashboardPage()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@34b9f960]" started-at="2024-08-26T12:18:31 AEST" name="dashboardPage" finished-at="2024-08-26T12:18:37 AEST" depends-on-methods="com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest.loginTest" duration-ms="5551" status="PASS">
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@2415fc55]" started-at="2025-01-18T16:26:32 AEDT" name="registrationConfirmationTest" finished-at="2025-01-18T16:26:34 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="1921" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dashboardPage -->
-        <test-method signature="logoutPage()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@34b9f960]" started-at="2024-08-26T12:18:37 AEST" name="logoutPage" finished-at="2024-08-26T12:18:39 AEST" depends-on-methods="com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest.dashboardPage" duration-ms="2285" status="PASS">
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightSearchTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@2415fc55]" started-at="2025-01-18T16:26:34 AEDT" name="flightSearchTest" finished-at="2025-01-18T16:26:37 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="2744" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutPage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest@34b9f960]" started-at="2024-08-26T12:18:39 AEST" name="quitDriver" finished-at="2024-08-26T12:18:39 AEST" duration-ms="199" status="PASS">
+        </test-method> <!-- flightSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@2415fc55]" started-at="2025-01-18T16:26:37 AEDT" name="flightSelectionTest" finished-at="2025-01-18T16:26:42 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.flightSearchTest" duration-ms="4912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@2415fc55]" started-at="2025-01-18T16:26:42 AEDT" name="flightReservationConfirmationTest" finished-at="2025-01-18T16:26:44 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.flightSelectionTest" duration-ms="2292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@2415fc55]" started-at="2025-01-18T16:26:44 AEDT" name="quitDriver" finished-at="2025-01-18T16:26:44 AEDT" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- com.diwakar15.selenium_docker.tests.vendorportal.VendorPortalTest -->
-    </test> <!-- user-john -->
-  </suite> <!-- vendor-portal -->
+      </class> <!-- com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passangers-count-4 -->
+    <test started-at="2025-01-18T16:26:13 AEDT" name="passangers-count-3" finished-at="2025-01-18T16:26:47 AEDT" duration-ms="33808">
+      <class name="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@19b89d4]" started-at="2025-01-18T16:26:13 AEDT" name="setDriver" finished-at="2025-01-18T16:26:21 AEDT" duration-ms="8075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6057aebb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@19b89d4]" started-at="2025-01-18T16:26:21 AEDT" name="setParameters" finished-at="2025-01-18T16:26:22 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.AbstractTest.setDriver" duration-ms="987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/flight-reservation/passanger-3.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParameters -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@19b89d4]" started-at="2025-01-18T16:26:22 AEDT" name="userRegistrationTest" finished-at="2025-01-18T16:26:34 AEDT" duration-ms="11670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@19b89d4]" started-at="2025-01-18T16:26:34 AEDT" name="registrationConfirmationTest" finished-at="2025-01-18T16:26:36 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="1371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightSearchTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@19b89d4]" started-at="2025-01-18T16:26:36 AEDT" name="flightSearchTest" finished-at="2025-01-18T16:26:42 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="5971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@19b89d4]" started-at="2025-01-18T16:26:42 AEDT" name="flightSelectionTest" finished-at="2025-01-18T16:26:45 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.flightSearchTest" duration-ms="3090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@19b89d4]" started-at="2025-01-18T16:26:45 AEDT" name="flightReservationConfirmationTest" finished-at="2025-01-18T16:26:47 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.flightSelectionTest" duration-ms="2284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@19b89d4]" started-at="2025-01-18T16:26:47 AEDT" name="quitDriver" finished-at="2025-01-18T16:26:47 AEDT" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passangers-count-3 -->
+    <test started-at="2025-01-18T16:26:13 AEDT" name="passangers-count-1" finished-at="2025-01-18T16:26:49 AEDT" duration-ms="35349">
+      <class name="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@3e62d773]" started-at="2025-01-18T16:26:13 AEDT" name="setDriver" finished-at="2025-01-18T16:26:22 AEDT" duration-ms="8943" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3370f42]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@3e62d773]" started-at="2025-01-18T16:26:22 AEDT" name="setParameters" finished-at="2025-01-18T16:26:22 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.AbstractTest.setDriver" duration-ms="118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/flight-reservation/passanger-1.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParameters -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@3e62d773]" started-at="2025-01-18T16:26:22 AEDT" name="userRegistrationTest" finished-at="2025-01-18T16:26:35 AEDT" duration-ms="12189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@3e62d773]" started-at="2025-01-18T16:26:35 AEDT" name="registrationConfirmationTest" finished-at="2025-01-18T16:26:36 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="1352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightSearchTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@3e62d773]" started-at="2025-01-18T16:26:36 AEDT" name="flightSearchTest" finished-at="2025-01-18T16:26:43 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="6527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@3e62d773]" started-at="2025-01-18T16:26:43 AEDT" name="flightSelectionTest" finished-at="2025-01-18T16:26:47 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.flightSearchTest" duration-ms="4218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@3e62d773]" started-at="2025-01-18T16:26:47 AEDT" name="flightReservationConfirmationTest" finished-at="2025-01-18T16:26:49 AEDT" depends-on-methods="com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest.flightSelectionTest" duration-ms="1747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest@3e62d773]" started-at="2025-01-18T16:26:49 AEDT" name="quitDriver" finished-at="2025-01-18T16:26:49 AEDT" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.diwakar15.selenium_docker.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passangers-count-1 -->
+  </suite> <!-- flight-reservation -->
 </testng-results>
